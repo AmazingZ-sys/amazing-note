@@ -1,0 +1,103 @@
+jQuery:
+本质：JavaScript框架
+宗旨：write Less  do More
+作用：优化js操作、dom操作、页面交互、事件、ajax、动效
+特性：隐式循环，链式调用
+
+jquery核心函数
+
+jQuery()  $()
+
+1、选择器，返回jQuery对象  ".box"
+2、函数，给document 添加 ready 事件
+3、传入 dom对象，返回jQuery对象
+4、"<div></div>"  创建新节点
+
+常用方法：
+.toArray()  讲jQuery对象转换为原生数组对象
+
+
+
+jquey对象样式方法
+
+ .css("样式属性","样式值")
+ .css({})
+
+
+
+筛选的方法：
+.eq(index)   返回对应下标的jQuery对象
+.get(index)  返回对应下标的DOM对象
+.first()   
+.last()
+.hasClass("类名")  判断jquery数组中是否有一个类名为***对象、
+.filter([选择器][,元素][,function])  筛选出符合条件的对象
+.is("选择器")  判断是否为某个标签
+.map(fn)   遍历对象生成一个新的数组
+.has("选择器")  返回一个选中的jquery对象
+.not("选择器")  从jquery数组中删除选中的元素
+.slice(start[,end])  截取指定位置的jquery对象
+.each(index,item)   遍历jquery数组  index在前，item在后
+.index()   返回jquery对象在数组的下标
+
+
+操作属性的方法
+attr()
+removeAttr()
+prop()
+removeProp()
+
+
+
+操作类名的方法
+addClass()
+removeClass()
+toggleClass()
+
+
+操作内容的方法
+.text()
+.html()
+.val()
+
+jquery对象元素的位置信息
+.offset()  返回一个位置信息的对象{top:**,left:**}  相对于浏览器的位置
+.position()  返回一个位置信息的对象{top:**,left:**}  相对于定位的祖先元素的位置
+.scrollTop()   
+.scrollLeft()  
+
+
+
+事件对象：
+
+
+e.offsetX
+e.offsetY
+e.pageX
+e.pageY
+e.target
+e.currentTarget   == this 
+e.stopPropagation()
+e.preventDefault() 
+
+事件：
+
+one()
+on()
+trigger()  自动触发事件
+triggerHandler  自动触发事件，并且清除浏览器默认行为
+hover(fn,fn)  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
